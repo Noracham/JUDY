@@ -1,3 +1,27 @@
 html {
   font-size: 62.5%;
 }
+body {
+  background: #000;
+  font-family: "Zen Antique Soft", serif;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_center_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
