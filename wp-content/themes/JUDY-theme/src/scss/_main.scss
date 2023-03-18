@@ -89,6 +89,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+  margin-block-end: 100px;
   &_txt {
     position: absolute;
     bottom: 90px;
@@ -98,5 +99,21 @@
       font-size: 50px;
       line-height: 85px;
     }
+  }
+}
+/*---------- otherlink ----------*/
+.otherlink {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 450px;
+  &_company {
+    grid-column: 1/3;
+    background: #fff;
+  }
+  &_welfare {
+    background: #eee;
+  }
+  &_message {
+    background: #ddd;
   }
 }
