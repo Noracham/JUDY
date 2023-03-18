@@ -20,6 +20,11 @@
             <p>福利厚生など会社の中身を数字で確認することができます</p>
         </div>
     </div>
-    <div class="otherlink_message"></div>
+    <div class="otherlink_message">
+        <div class="otherlink_message_content">
+            <h1>メッセージ</h1>
+            <p>先輩社員からのメッセージや入社してからの体験談を掲載しています</p>
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>
