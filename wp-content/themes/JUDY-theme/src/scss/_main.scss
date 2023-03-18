@@ -5,6 +5,7 @@
 /*---------- header ----------*/
 .header {
   &_nav {
+    padding: 0 !important;
     position: relative;
     &_img {
       position: absolute;
@@ -77,6 +78,25 @@
           height: 100%;
         }
       }
+    }
+  }
+}
+/*---------- hero ----------*/
+.hero {
+  position: relative;
+  height: calc(100vh - 90px);
+  background-image: url("../../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  &_txt {
+    position: absolute;
+    bottom: 90px;
+    left: 100px;
+    color: #fff;
+    &_title {
+      font-size: 50px;
+      line-height: 85px;
     }
   }
 }
