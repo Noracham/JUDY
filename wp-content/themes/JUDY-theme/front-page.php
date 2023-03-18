@@ -10,11 +10,16 @@
             </div>
             <button class="link_btn">
                 会社について
-                <a href=""></a>
+                <a href="<?php echo esc_url(home_url('/company/')); ?>"></a>
             </button>
         </div>
     </div>
-    <div class="otherlink_welfare"></div>
+    <div class="otherlink_welfare">
+        <div class="otherlink_welfare_content">
+            <h1>数字で見る</h1>
+            <p>福利厚生など会社の中身を数字で確認することができます</p>
+        </div>
+    </div>
     <div class="otherlink_message"></div>
 </section>
 <?php get_footer(); ?>
