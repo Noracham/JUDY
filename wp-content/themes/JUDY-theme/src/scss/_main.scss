@@ -109,11 +109,75 @@
   &_company {
     grid-column: 1/3;
     background: #fff;
+    background-image: url("../../img/section-back1.jpg");
+    background-size: cover;
+    background-position: center;
+    &_inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .link_btn {
+        align-self: flex-end;
+        margin-bottom: 10px;
+      }
+    }
+    &_in {
+      position: relative;
+      width: 385px;
+      height: auto;
+      aspect-ratio: 1/1;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: "";
+        transform: rotate(-45deg);
+
+        z-index: 999;
+        top: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        background: #fff;
+        border: 5px solid #000;
+        z-index: -1;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        transform: rotate(-45deg);
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: -2;
+      }
+      .rotate {
+        text-align: center;
+        align-items: center;
+        h1 {
+          font-size: 5rem;
+          margin-bottom: 30px;
+        }
+        &_txt {
+          font-size: 2rem;
+          width: 80%;
+        }
+      }
+    }
   }
   &_welfare {
     background: #eee;
+    background-image: url("../../img/section-back3.jpg");
+    background-size: cover;
+    background-position: center;
   }
   &_message {
     background: #ddd;
+    background-image: url("../../img/section-back2.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
