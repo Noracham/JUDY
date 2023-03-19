@@ -257,6 +257,22 @@ li {
   text-align: center;
 }
 
+/*---------- go requirements ----------*/
+.go_requirements_content {
+  position: relative;
+  background: #fff;
+  padding: 45px;
+}
+.go_requirements_content::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: 8px;
+  border: 5px solid #000;
+}
+
 .wrapper {
   padding-block: 100px;
 }

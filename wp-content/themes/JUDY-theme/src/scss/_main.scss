@@ -243,3 +243,20 @@
     }
   }
 }
+/*---------- go requirements ----------*/
+.go_requirements {
+  &_content {
+    position: relative;
+    background: #fff;
+    padding: 45px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      top: 8px;
+      left: 8px;
+      border: 5px solid #000;
+    }
+  }
+}

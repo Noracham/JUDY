@@ -27,4 +27,19 @@
         </div>
     </div>
 </section>
+<section class="go_requirements wrapper">
+    <div class="go_requirements_content inner">
+        <div class="go_requirements_content_job">
+            <p class="new">新卒</p>
+            <p class="old">中途</p>
+            <p class="part">アルバイト</p>
+        </div>
+        <div class="go_requirements_content_txt">
+            <h1><span>愛</span>と<span>喜び</span>を持って働く仲間を募集しています</h1>
+            <p>弊社では職種形態問わず、募集しております<br>詳しくは採用ページをご覧ください</p>
+            <p>まずは面談という形でお話ししましょう<br>エントリーお待ちしています</p>
+        </div>
+        <button class="link_btn"><a href="<?php echo esc_url('/requirements/'); ?>"></a>詳しくはこちら</button>
+    </div>
+</section>
 <?php get_footer(); ?>
