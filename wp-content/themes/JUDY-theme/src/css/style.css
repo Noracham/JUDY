@@ -272,6 +272,75 @@ li {
   left: 8px;
   border: 5px solid #000;
 }
+.go_requirements_content_job {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.go_requirements_content_job .new {
+  position: relative;
+  font-size: 4rem;
+  width: 125px;
+  height: 125px;
+  z-index: 1;
+  text-align: center;
+}
+.go_requirements_content_job .new::before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+}
+.go_requirements_content_job .old {
+  right: -85px;
+  top: -10px;
+  position: relative;
+  font-size: 3rem;
+  width: 85px;
+  height: 85px;
+  z-index: 1;
+  text-align: center;
+}
+.go_requirements_content_job .old::before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+}
+.go_requirements_content_job .part {
+  top: -160px;
+  right: -150px;
+  position: relative;
+  font-size: 1.8rem;
+  width: 85px;
+  height: 85px;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+.go_requirements_content_job .part::before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+}
 
 .wrapper {
   padding-block: 100px;
@@ -299,6 +368,7 @@ li {
   background: #000;
   border: 5px solid #fff;
   transition: all 0.3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1450980392);
 }
 .link_btn:hover {
   background: #fff;

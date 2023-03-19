@@ -28,11 +28,11 @@
     </div>
 </section>
 <section class="go_requirements wrapper">
-    <div class="go_requirements_content inner">
+    <div class="go_requirements_content inner flex_center">
         <div class="go_requirements_content_job">
-            <p class="new">新卒</p>
-            <p class="old">中途</p>
-            <p class="part">アルバイト</p>
+            <p class="new flex_center">新卒</p>
+            <p class="old flex_center">中途</p>
+            <p class="part flex_center">アルバイト</p>
         </div>
         <div class="go_requirements_content_txt">
             <h1><span>愛</span>と<span>喜び</span>を持って働く仲間を募集しています</h1>

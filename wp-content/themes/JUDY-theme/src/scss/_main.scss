@@ -258,5 +258,74 @@
       left: 8px;
       border: 5px solid #000;
     }
+    &_job {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      .new {
+        position: relative;
+        font-size: 4rem;
+        width: 125px;
+        height: 125px;
+        z-index: 1;
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #000;
+          z-index: -1;
+        }
+      }
+      .old {
+        right: -85px;
+        top: -10px;
+        position: relative;
+        font-size: 3rem;
+        width: 85px;
+        height: 85px;
+        z-index: 1;
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #000;
+          z-index: -1;
+        }
+      }
+      .part {
+        top: -160px;
+        right: -150px;
+        position: relative;
+        font-size: 1.8rem;
+        width: 85px;
+        height: 85px;
+        z-index: 1;
+        text-align: center;
+        white-space: nowrap;
+        &::before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #000;
+          z-index: -1;
+        }
+      }
+    }
   }
 }
