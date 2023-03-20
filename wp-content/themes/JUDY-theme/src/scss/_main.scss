@@ -386,29 +386,27 @@
 /*---------- footer ----------*/
 .footer {
   width: 100%;
-  height: 425px;
+  min-height: 212.5px;
   background: #fff;
-  margin-block-start: 100px;
-  overflow-x: hidden;
+  margin-block-start: 312px;
   &_content {
     position: relative;
     height: 100%;
-    &::before {
-      content: "";
-      position: absolute;
-      background: #000;
-      height: 50%;
-      width: 200vw;
-      top: -1;
-      left: -100vw;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background: #000;
+    //   height: 50%;
+    //   width: 200vw;
+    //   top: -1;
+    //   left: -100vw;
+    // }
     &_half {
       padding-block: 20px;
-
-      position: absolute;
-      bottom: 0;
+      // position: absolute;
+      // bottom: 0;
       width: 100%;
-      height: 50%;
+      // height: 50%;
       background: #fff;
       display: flex;
       justify-content: space-between;
@@ -422,7 +420,7 @@
     }
     &_logo {
       position: absolute;
-      bottom: 0;
+      top: -212.5px;
       left: 50%;
       transform: translateX(-50%);
       width: 425px;
