@@ -508,3 +508,20 @@
     }
   }
 }
+.company_overview {
+  width: 100%;
+  height: auto;
+  padding: 110px;
+  background: #fff;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
+    background: #fff;
+    border: 5px solid #000;
+  }
+}

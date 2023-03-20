@@ -20,6 +20,11 @@
             </div>
         </div>
     </div>
+</section>
+<section class="company_overview wrapper">
+    <div class="company_overview_content inner">
+
+    </div>
 
 </section>
 <?php get_footer(); ?>
