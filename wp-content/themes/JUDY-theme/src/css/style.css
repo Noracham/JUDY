@@ -58,6 +58,13 @@ a {
   height: 100%;
   object-fit: contain;
 }
+.header_nav_img a {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
 .header_nav_list {
   display: flex;
   justify-content: space-between;
@@ -72,6 +79,11 @@ a {
   line-height: calc(90px - 1.3rem);
   text-align: center;
   font-size: 2.5rem;
+  transition: 0.3s all ease-in;
+}
+.header_nav_list li:hover {
+  background: #000;
+  color: #fff;
 }
 .header_nav_list li:nth-child(even) span::first-letter {
   color: #8c8c8c;
@@ -79,6 +91,7 @@ a {
 .header_nav_list li span {
   position: absolute;
   top: 23px;
+  max-height: 1.3rem;
   transform: translateX(-50%);
   text-align: center;
   font-size: 1.3rem;
@@ -98,6 +111,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 5;
 }
 
 /*---------- hero ----------*/
