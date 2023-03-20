@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -9,6 +10,11 @@ body {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .flex {
@@ -262,6 +268,7 @@ li {
   position: relative;
   background: #fff;
   padding: 45px;
+  padding-block-end: 150px;
 }
 .go_requirements_content::before {
   content: "";
@@ -273,13 +280,13 @@ li {
   border: 5px solid #000;
 }
 .go_requirements_content_job {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  min-width: 280px;
+  height: 240px;
+  margin-inline: 5%;
   color: #fff;
 }
 .go_requirements_content_job .new {
+  transform: translate(25px, 25px);
   position: relative;
   font-size: 4rem;
   width: 125px;
@@ -299,6 +306,7 @@ li {
   z-index: -1;
 }
 .go_requirements_content_job .old {
+  transform: translate(25px, 25px);
   right: -85px;
   top: -10px;
   position: relative;
@@ -320,6 +328,7 @@ li {
   z-index: -1;
 }
 .go_requirements_content_job .part {
+  transform: translate(25px, 25px);
   top: -160px;
   right: -150px;
   position: relative;
@@ -340,6 +349,102 @@ li {
   left: 0;
   background: #000;
   z-index: -1;
+}
+.go_requirements_content_txt {
+  text-align: center;
+  max-width: 550px;
+}
+.go_requirements_content_txt h1 {
+  font-size: 4rem;
+}
+.go_requirements_content_txt h1 span {
+  font-size: 5rem;
+  color: #8c8c8c;
+}
+.go_requirements_content_txt h1 span:first-child {
+  color: #a68308;
+}
+.go_requirements_content_txt p {
+  font-size: 2rem;
+}
+.go_requirements_content_txt p:first-of-type {
+  margin-block-start: 50px;
+  margin-block-end: 30px;
+}
+.go_requirements_content .link_btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+.go_requirements_content .link_btn::before {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  content: "24卒エントリー受付中";
+  font-size: 1.7rem;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*---------- footer ----------*/
+.footer {
+  width: 100%;
+  height: 425px;
+  background: #fff;
+  margin-block-start: 100px;
+  overflow-x: hidden;
+}
+.footer_content {
+  position: relative;
+  height: 100%;
+}
+.footer_content::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 50%;
+  width: 200vw;
+  top: -1;
+  left: -100vw;
+}
+.footer_content_half {
+  padding-block: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.footer_content_list li:not(:first-child) {
+  margin-block-start: 10px;
+}
+.footer_content_logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 425px;
+  height: 425px;
+}
+.footer_content_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .wrapper {

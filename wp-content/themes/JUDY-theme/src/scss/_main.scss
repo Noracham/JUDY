@@ -249,6 +249,7 @@
     position: relative;
     background: #fff;
     padding: 45px;
+    padding-block-end: 150px;
     &::before {
       content: "";
       position: absolute;
@@ -259,12 +260,16 @@
       border: 5px solid #000;
     }
     &_job {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      min-width: 280px;
+      height: 240px;
+      margin-inline: 5%;
+      // position: absolute;
+      // left: 0;
+      // top: 50%;
+      // transform: translateY(-50%);
       color: #fff;
       .new {
+        transform: translate(25px, 25px);
         position: relative;
         font-size: 4rem;
         width: 125px;
@@ -284,6 +289,7 @@
         }
       }
       .old {
+        transform: translate(25px, 25px);
         right: -85px;
         top: -10px;
         position: relative;
@@ -305,6 +311,7 @@
         }
       }
       .part {
+        transform: translate(25px, 25px);
         top: -160px;
         right: -150px;
         position: relative;
@@ -325,6 +332,105 @@
           background: #000;
           z-index: -1;
         }
+      }
+    }
+    &_txt {
+      text-align: center;
+      max-width: 550px;
+      h1 {
+        font-size: 4rem;
+        span {
+          font-size: 5rem;
+          color: $color-silver;
+          &:first-child {
+            color: $color-gold;
+          }
+        }
+      }
+      p {
+        font-size: 2rem;
+        &:first-of-type {
+          margin-block-start: 50px;
+          margin-block-end: 30px;
+        }
+      }
+    }
+    .link_btn {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 15px;
+      &::before {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        position: absolute;
+        content: "24卒エントリー受付中";
+        font-size: 1.7rem;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+      }
+    }
+  }
+}
+.absolute {
+  //position:absoluteの要素を中央寄せする
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*---------- footer ----------*/
+.footer {
+  width: 100%;
+  height: 425px;
+  background: #fff;
+  margin-block-start: 100px;
+  overflow-x: hidden;
+  &_content {
+    position: relative;
+    height: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      background: #000;
+      height: 50%;
+      width: 200vw;
+      top: -1;
+      left: -100vw;
+    }
+    &_half {
+      padding-block: 20px;
+
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      font-size: 2rem;
+    }
+    &_list {
+      //はじめのli要素以外に上余白10pxをつける
+      li:not(:first-child) {
+        margin-block-start: 10px;
+      }
+    }
+    &_logo {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 425px;
+      height: 425px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
   }
