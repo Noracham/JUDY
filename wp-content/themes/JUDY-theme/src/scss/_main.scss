@@ -99,6 +99,18 @@
       font-size: 50px;
       line-height: 85px;
     }
+    &_subtitle {
+      font-size: 5rem;
+      text-align: center;
+    }
+    &_entitle {
+      font-size: 2rem;
+      font-family: "Yatra One", cursive;
+      text-transform: uppercase;
+      &::first-letter {
+        color: $color-silver;
+      }
+    }
   }
 }
 /*---------- otherlink ----------*/
@@ -429,6 +441,69 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+      }
+    }
+  }
+}
+/*---------- company page ----------*/
+.company_about {
+  width: 100%;
+  &_one {
+    width: 100%;
+    height: 425px;
+    background-image: url(../../img/section-back1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+    &:nth-of-type(2) {
+      background-image: url(../../img/section-back2.jpg);
+      .inner {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    &_in {
+      position: relative;
+      width: 385px;
+      height: auto;
+      aspect-ratio: 1/1;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: "";
+        transform: rotate(-45deg);
+        z-index: 999;
+        top: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        background: #fff;
+        border: 5px solid #000;
+        z-index: -1;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        transform: rotate(-45deg);
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: -2;
+      }
+      .rotate {
+        text-align: center;
+        align-items: center;
+        h1 {
+          font-size: 5rem;
+          margin-bottom: 30px;
+        }
+        &_txt {
+          font-size: 2rem;
+          width: 80%;
+        }
       }
     }
   }
