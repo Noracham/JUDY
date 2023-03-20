@@ -513,19 +513,32 @@ a {
 .company_overview {
   width: 100%;
   height: auto;
-  padding: 110px;
-  background: #fff;
   position: relative;
+  z-index: -1;
 }
-.company_overview::before {
-  position: absolute;
-  content: "";
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  top: 10px;
-  left: 10px;
-  background: #fff;
-  border: 5px solid #000;
+.company_overview_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.company_overview_content_list {
+  padding: 10%;
+  position: relative;
+  z-index: 999;
+}
+.company_overview_content_list li {
+  padding: 20px 30px;
+  display: flex;
+  font-size: 2rem;
+  color: #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.company_overview_content_list li:not(:first-child) {
+  border-top: none;
+}
+.company_overview_content_list li .title {
+  width: 25%;
 }
 
 .wrapper {
@@ -567,4 +580,20 @@ a {
   height: 100%;
   top: 0;
   height: 0;
+}
+
+/*---------- 黒枠フレーム ----------*/
+.black_frame {
+  background: #fff;
+  position: relative;
+}
+.black_frame::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  border: 5px solid #000;
 }/*# sourceMappingURL=style.css.map */

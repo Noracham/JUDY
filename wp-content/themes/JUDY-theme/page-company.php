@@ -22,8 +22,18 @@
     </div>
 </section>
 <section class="company_overview wrapper">
-    <div class="company_overview_content inner">
+    <div class="company_overview_content inner black_frame">
+        <ul class="company_overview_content_list">
+            <?php
+            $max = 5;
+            for ($i = 1; $i < $max; $i++) {
+                $item = get_field('item' . $i);
 
+                echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $item['value'] . '</p></li>';
+            }
+            // echo '<li>' . get_field('item')['value'] . '</li>';
+            ?>
+        </ul>
     </div>
 
 </section>
