@@ -25,9 +25,9 @@
     <div class="company_overview_content inner black_frame">
         <ul class="company_overview_content_list">
             <?php
-            $max = 5;
-            for ($i = 1; $i < $max; $i++) {
+            for ($i = 1; $i < 99999; $i++) {
                 $item = get_field('item' . $i);
+                if ($item == null) break;
 
                 echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $item['value'] . '</p></li>';
             }
