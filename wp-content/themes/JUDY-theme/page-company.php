@@ -31,7 +31,6 @@
 
                 echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $item['value'] . '</p></li>';
             }
-            // echo '<li>' . get_field('item')['value'] . '</li>';
             ?>
         </ul>
     </div>
