@@ -565,17 +565,32 @@ a {
 .requirements_archive {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .requirements_archive_one {
   position: relative;
   width: 35%;
+  margin: 7.5%;
   aspect-ratio: 1/1;
   background: #fff;
-  border: 5px solid #000;
   transition: all 0.3s;
+  z-index: 999;
+}
+.requirements_archive_one::after {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1;
 }
 .requirements_archive_one a {
   position: absolute;
+  border: 5px solid #000;
   top: 0;
   left: 0;
   width: 100%;
