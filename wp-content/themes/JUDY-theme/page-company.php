@@ -22,7 +22,7 @@
     </div>
 </section>
 <section class="company_overview wrapper">
-    <div class="company_overview_content inner black_frame">
+    <div class="company_overview_content inner _frame black_frame">
         <ul class="company_overview_content_list">
             <?php
             for ($i = 1; $i < 99999; $i++) {
