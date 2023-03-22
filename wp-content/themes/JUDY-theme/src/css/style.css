@@ -79,7 +79,7 @@ a {
   line-height: calc(90px - 1.3rem);
   text-align: center;
   font-size: 2.5rem;
-  transition: 0.3s all ease-in;
+  transition: 0.3s all;
 }
 .header_nav_list li:hover {
   background: #000;
