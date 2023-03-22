@@ -555,6 +555,33 @@ a {
   width: 25%;
 }
 
+.test {
+  width: 100vw;
+  height: 500px;
+  background: #fff;
+}
+
+/*---------- requirements page ----------*/
+.requirements_archive {
+  width: 100%;
+  height: auto;
+}
+.requirements_archive_one {
+  width: 35%;
+  aspect-ratio: 1/1;
+  background: #fff;
+  border: 5px solid #000;
+}
+.requirements_archive_one_img {
+  width: 100%;
+  height: 60%;
+}
+.requirements_archive_one_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .wrapper {
   padding-block: 100px;
 }
