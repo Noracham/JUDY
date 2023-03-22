@@ -567,10 +567,23 @@ a {
   height: auto;
 }
 .requirements_archive_one {
+  position: relative;
   width: 35%;
   aspect-ratio: 1/1;
   background: #fff;
   border: 5px solid #000;
+  transition: all 0.3s;
+}
+.requirements_archive_one a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.requirements_archive_one:hover {
+  filter: brightness(0.8);
+  transform: scale(0.99);
 }
 .requirements_archive_one_img {
   width: 100%;
@@ -580,6 +593,39 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.requirements_archive_one_txt {
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+.requirements_archive_one_txt h2 {
+  font-size: 2rem;
+  z-index: 3;
+}
+.requirements_archive_one_txt .triangle {
+  position: absolute;
+  font-size: 1.7rem;
+  z-index: 2;
+  top: 23%;
+  left: 21%;
+  color: #fff;
+  transform: rotate(-30deg);
+}
+.requirements_archive_one_txt .triangle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 37px solid transparent;
+  border-left: 37px solid transparent;
+  border-top: 65px solid #a68308;
+  border-bottom: 0;
+  z-index: -1;
 }
 
 .wrapper {

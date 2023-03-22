@@ -2,10 +2,11 @@
 <section class="requirements_archive wrapper inner">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="requirements_archive_one">
+                <a href="<?php the_permalink() ?>"></a>
                 <div class="requirements_archive_one_img">
                     <img src="<?php the_post_thumbnail_url() ?>" alt="">
                 </div>
-                <div class="requirements_archive_one_txt">
+                <div class="requirements_archive_one_txt flex_center">
                     <h2><?php echo get_the_title(); ?></h2>
                     <p class="triangle"><?php $term = get_terms('requirements-category');
                                         echo $term[0]->name; ?></p>
