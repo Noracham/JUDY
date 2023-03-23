@@ -644,3 +644,28 @@
     }
   }
 }
+/*---------- single requirements ----------*/
+.requirements_single {
+  &_content {
+    &_list {
+      padding: 10%;
+      position: relative;
+      z-index: 999;
+      li {
+        padding: 20px 30px;
+        display: flex;
+        font-size: 2rem;
+        color: #000;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        //はじめのli要素以外は下線のみ
+        &:not(:first-child) {
+          border-top: none;
+        }
+        .title {
+          width: 25%;
+        }
+      }
+    }
+  }
+}

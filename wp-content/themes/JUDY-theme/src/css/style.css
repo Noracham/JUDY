@@ -644,6 +644,27 @@ a {
   z-index: -1;
 }
 
+/*---------- single requirements ----------*/
+.requirements_single_content_list {
+  padding: 10%;
+  position: relative;
+  z-index: 999;
+}
+.requirements_single_content_list li {
+  padding: 20px 30px;
+  display: flex;
+  font-size: 2rem;
+  color: #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.requirements_single_content_list li:not(:first-child) {
+  border-top: none;
+}
+.requirements_single_content_list li .title {
+  width: 25%;
+}
+
 .wrapper {
   padding-block: 100px;
 }
