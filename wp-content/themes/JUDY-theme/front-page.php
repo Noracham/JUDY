@@ -9,8 +9,8 @@
                 </div>
             </div>
             <button class="link_btn">
-                会社について
                 <a href="<?php echo esc_url(home_url('/company/')); ?>"></a>
+                会社について
             </button>
         </div>
     </div>
