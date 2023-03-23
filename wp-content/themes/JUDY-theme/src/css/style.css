@@ -700,6 +700,8 @@ a {
 
 /*---------- entry ----------*/
 .entry_content {
+  margin-inline: auto;
+  max-width: 900px;
   padding: 10%;
 }
 .entry_content_form {

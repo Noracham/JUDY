@@ -701,6 +701,8 @@
 /*---------- entry ----------*/
 .entry {
   &_content {
+    margin-inline: auto;
+    max-width: 900px;
     padding: 10%;
     &_form {
       position: relative;
