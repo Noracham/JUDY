@@ -30,7 +30,7 @@
                 if ($item == null) break;
 
                 if ($item['title'] != null && $item['value'] != null) {
-                    echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $requirements['value'] . '</p></li>';
+                    echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $item['value'] . '</p></li>';
                 }
             }
             ?>
