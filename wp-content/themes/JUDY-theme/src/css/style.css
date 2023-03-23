@@ -177,43 +177,6 @@ a {
   aspect-ratio: 1/1;
   z-index: 1;
 }
-.otherlink_company_in::after {
-  position: absolute;
-  content: "";
-  transform: rotate(-45deg);
-  z-index: 999;
-  top: 5px;
-  left: 5px;
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  background: #fff;
-  border: 5px solid #000;
-  z-index: -1;
-}
-.otherlink_company_in::before {
-  position: absolute;
-  content: "";
-  transform: rotate(-45deg);
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: -2;
-}
-.otherlink_company_in .rotate {
-  text-align: center;
-  align-items: center;
-}
-.otherlink_company_in .rotate h1 {
-  font-size: 5rem;
-  margin-bottom: 30px;
-}
-.otherlink_company_in .rotate_txt {
-  font-size: 2rem;
-  width: 80%;
-}
 .otherlink_welfare {
   position: relative;
   background: #eee;
@@ -682,6 +645,51 @@ a {
   width: 75%;
 }
 
+/*---------- welfare ----------*/
+.welfare {
+  width: 100%;
+}
+.welfare_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.welfare_content_one {
+  width: 385px;
+  height: auto;
+  aspect-ratio: 1/1;
+  z-index: 1;
+  margin: 7%;
+}
+.welfare_content_one_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welfare_content_one_title h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.welfare_content_one_title_img {
+  width: 25%;
+  height: auto;
+}
+.welfare_content_one_title_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.welfare_content_one p {
+  text-align: center;
+  font-size: 2rem;
+  height: 40%;
+}
+.welfare_content_one p span {
+  font-size: 4rem;
+  border-bottom: 2px solid #000;
+}
+
 .wrapper {
   padding-block: 100px;
 }
@@ -737,4 +745,46 @@ a {
   left: 10px;
   background: #fff;
   border: 5px solid #000;
+}
+
+/*---------- 白黒フレーム ----------*/
+.bwframe {
+  position: relative;
+}
+.bwframe::after {
+  position: absolute;
+  content: "";
+  transform: rotate(-45deg);
+  z-index: 999;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: #fff;
+  border: 5px solid #000;
+  z-index: -1;
+}
+.bwframe::before {
+  position: absolute;
+  content: "";
+  transform: rotate(-45deg);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -2;
+}
+.bwframe .rotate {
+  text-align: center;
+  align-items: center;
+}
+.bwframe .rotate h1 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+.bwframe .rotate_txt {
+  font-size: 2rem;
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
