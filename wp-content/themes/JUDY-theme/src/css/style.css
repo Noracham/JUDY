@@ -645,8 +645,22 @@ a {
 }
 
 /*---------- single requirements ----------*/
+.requirements_single_content {
+  position: relative;
+}
+.requirements_single_content .black {
+  z-index: 99;
+  position: absolute;
+  background: #000;
+  height: 85px;
+  width: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  color: #fff;
+}
 .requirements_single_content_list {
-  padding: 10%;
+  padding: calc(10% + 85px) 10% 10% 10%;
   position: relative;
   z-index: 999;
 }

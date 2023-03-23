@@ -647,8 +647,20 @@
 /*---------- single requirements ----------*/
 .requirements_single {
   &_content {
+    position: relative;
+    .black {
+      z-index: 99;
+      position: absolute;
+      background: #000;
+      height: 85px;
+      width: calc(100% - 20px);
+      top: 10px;
+      left: 10px;
+      font-size: 3rem;
+      color: #fff;
+    }
     &_list {
-      padding: 10%;
+      padding: calc(10% + 85px) 10% 10% 10%;
       position: relative;
       z-index: 999;
       li {
