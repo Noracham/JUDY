@@ -36,6 +36,7 @@ function create_post_type()
             'singular_label' => 'requirements_category',
             'public' => true,
             'show_ui' => true,
+            'show_in_rest' => true,
         )
     );
 }

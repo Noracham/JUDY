@@ -17,7 +17,9 @@
                 $requirements = get_field('requirements' . $i);
                 if ($requirements == null) break;
 
-                echo '<li><p class="title">' . $requirements['title'] . '</p><p class="value">' . $requirements['value'] . '</p></li>';
+                if ($requirements['title'] != null && $requirements['value'] != null) {
+                    echo '<li><p class="title">' . $requirements['title'] . '</p><p class="value">' . $requirements['value'] . '</p></li>';
+                }
             }
             ?>
         </ul>

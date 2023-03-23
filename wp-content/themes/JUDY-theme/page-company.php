@@ -29,7 +29,9 @@
                 $item = get_field('item' . $i);
                 if ($item == null) break;
 
-                echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $item['value'] . '</p></li>';
+                if ($item['title'] != null && $item['value'] != null) {
+                    echo '<li><p class="title">' . $item['title'] . '</p><p class="value">' . $requirements['value'] . '</p></li>';
+                }
             }
             ?>
         </ul>
