@@ -698,3 +698,13 @@
     }
   }
 }
+/*---------- entry ----------*/
+.entry {
+  &_content {
+    padding: 10%;
+    &_form {
+      position: relative;
+      z-index: 999;
+    }
+  }
+}

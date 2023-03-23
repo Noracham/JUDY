@@ -698,6 +698,15 @@ a {
   border-bottom: 2px solid #000;
 }
 
+/*---------- entry ----------*/
+.entry_content {
+  padding: 10%;
+}
+.entry_content_form {
+  position: relative;
+  z-index: 999;
+}
+
 .wrapper {
   padding-block: 100px;
 }
@@ -758,6 +767,7 @@ a {
 /*---------- 白黒フレーム ----------*/
 .bwframe {
   position: relative;
+  z-index: -2;
 }
 .bwframe::after {
   position: absolute;
