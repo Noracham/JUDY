@@ -678,6 +678,9 @@ a {
 .requirements_single_content_list li .title {
   width: 25%;
 }
+.requirements_single_content_list li .value {
+  width: 75%;
+}
 
 .wrapper {
   padding-block: 100px;
