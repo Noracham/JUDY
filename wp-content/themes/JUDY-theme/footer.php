@@ -22,7 +22,7 @@
                     if ($requirements->have_posts()) :
                         while ($requirements->have_posts()) : $requirements->the_post();
                     ?>
-                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                            <li><a href="<?php the_permalink(); ?>">-<?php the_title(); ?></a></li>
                     <?php
                         endwhile;
                     endif;

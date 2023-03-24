@@ -54,7 +54,7 @@
 /*---------- 白黒フレーム ----------*/
 .bwframe {
   position: relative;
-  z-index: -2;
+  z-index: 999;
   &::after {
     position: absolute;
     content: "";
@@ -93,6 +93,3 @@
     }
   }
 }
-
-
-

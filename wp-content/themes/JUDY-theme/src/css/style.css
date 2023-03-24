@@ -430,6 +430,10 @@ a {
   height: 100%;
   object-fit: contain;
 }
+.footer_content_requirements_list li {
+  padding-inline-start: 10px;
+  font-size: 1.5rem;
+}
 
 /*---------- company page ----------*/
 .company_about {
@@ -834,7 +838,7 @@ a {
 /*---------- 白黒フレーム ----------*/
 .bwframe {
   position: relative;
-  z-index: -2;
+  z-index: 999;
 }
 .bwframe::after {
   position: absolute;

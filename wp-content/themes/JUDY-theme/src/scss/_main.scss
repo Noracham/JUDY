@@ -428,6 +428,14 @@
         object-fit: contain;
       }
     }
+    &_requirements {
+      &_list {
+        li {
+          padding-inline-start: 10px;
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }
 /*---------- company page ----------*/
