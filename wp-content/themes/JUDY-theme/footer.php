@@ -31,6 +31,7 @@
                 </ul>
             </div>
             <div class="footer_content_logo">
+                <a href="<?php echo esc_url(home_url()); ?>"></a>
                 <img src="<?php echo esc_url(get_theme_file_uri('img/logo.png')); ?>" alt="LOGO">
             </div>
         </div>
