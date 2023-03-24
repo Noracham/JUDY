@@ -10,7 +10,7 @@
                 <li><a href="<?php echo esc_url(home_url('/entry/')) ?>">エントリー</a></li>
             </ul>
             <div class="footer_content_requirements">
-                <h3>募集要項</h3>
+                <h3><a href="<?php echo esc_url(home_url('/requirements/')); ?>">募集要項</a></h3>
                 <ul class="footer_content_requirements_list">
 
                     <?php
