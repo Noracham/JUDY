@@ -704,9 +704,68 @@
     margin-inline: auto;
     max-width: 900px;
     padding: 10%;
+    .submit {
+      position: relative;
+      text-align: center;
+      &_btn {
+        background: #000;
+        color: #fff;
+        width: 150px;
+        height: 65px;
+        font-size: 2rem;
+      }
+    }
     &_form {
       position: relative;
       z-index: 999;
+      .important {
+        font-size: 1.3rem;
+        color: #f00;
+      }
+      &_in {
+        margin-block-end: 20px;
+        font-size: 2rem;
+        input {
+          height: 30px;
+          border: 1px solid #000;
+        }
+        textarea {
+          width: 500px;
+          height: 150px;
+          border: 1px solid #000;
+        }
+        .job {
+          text-align: center;
+          width: 325px;
+          border: 1px solid #000;
+          font-size: 1.7rem;
+          height: 30px;
+        }
+        .kind {
+          font-size: 1.5rem;
+          .wpcf7-list-item {
+            label {
+              display: flex;
+              align-items: center;
+              input {
+                margin-inline-end: 5px;
+              }
+            }
+          }
+        }
+      }
+      .group {
+        margin-block-end: 20px;
+
+        label {
+          font-size: 2rem;
+        }
+        input {
+          width: 440px;
+          height: 30px;
+          border: 1px solid #000;
+        }
+      }
     }
   }
 }
