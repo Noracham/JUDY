@@ -5,9 +5,9 @@
         <div class="footer_content_half">
             <ul class="footer_content_list">
                 <li><a href="<?php echo esc_url(home_url()) ?>">ホーム</a></li>
-                <li><a href="<?php echo esc_url(home_url('/company/')) ?>"></a>会社概要</li>
-                <li><a href="<?php echo esc_url(home_url('/welfare/')) ?>"></a>数字で見る</li>
-                <li><a href="<?php echo esc_url(home_url('/category/message/')) ?>"></a>社員メッセージ</li>
+                <li><a href="<?php echo esc_url(home_url('/company/')) ?>">会社概要</a></li>
+                <li><a href="<?php echo esc_url(home_url('/welfare/')) ?>">数字で見る</a></li>
+                <li><a href="<?php echo esc_url(home_url('/entry/')) ?>">エントリー</a></li>
             </ul>
             <div class="footer_content_requirements">
                 <h3>募集要項</h3>
