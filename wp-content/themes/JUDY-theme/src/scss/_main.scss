@@ -704,6 +704,9 @@
     margin-inline: auto;
     max-width: 900px;
     padding: 10%;
+    .wpcf7-not-valid-tip {
+      font-size: 1rem;
+    }
     .submit {
       position: relative;
       text-align: center;
