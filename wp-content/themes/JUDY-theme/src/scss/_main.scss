@@ -732,6 +732,14 @@
     .submit {
       position: relative;
       text-align: center;
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wpcf7-spinner {
+        display: none;
+      }
       &_btn {
         background: #000;
         color: #fff;
