@@ -16,6 +16,7 @@
     </div>
     <div class="otherlink_welfare">
         <div class="otherlink_welfare_content">
+            <a href="<?php echo esc_url(home_url('/welfare/')); ?>"></a>
             <h1>数字で見る</h1>
             <p>福利厚生など会社の中身を数字で確認することができます</p>
         </div>
@@ -39,7 +40,7 @@
             <p>弊社では職種形態問わず、募集しております<br>詳しくは採用ページをご覧ください</p>
             <p>まずは面談という形でお話ししましょう<br>エントリーお待ちしています</p>
         </div>
-        <button class="link_btn"><a href="<?php echo esc_url('/requirements/'); ?>"></a>詳しくはこちら</button>
+        <button class="link_btn"><a href="<?php echo esc_url(home_url('/requirements/')); ?>"></a>詳しくはこちら</button>
     </div>
 </section>
 <?php get_footer(); ?>
